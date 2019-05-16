@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TOM-Or-H9e">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5LU-fA-kpg">
+            <objects>
+                <navigationController id="TOM-Or-H9e" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jb9-KF-Z3j">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="552-Y1-ted"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4g-Ct-WTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1635" y="174"/>
+        </scene>
+        <!--🕵️‍♂️ Spy App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TextEncryptionViewController" customModule="TextEncryption" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cipher Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IU8-P1-mBo">
+                                <rect key="frame" x="128.66666666666666" y="81" width="265.33333333333337" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cipher Key" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-dH-Qje">
+                                <rect key="frame" x="129" y="122" width="265" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-jN-O4R">
+                                <rect key="frame" x="20" y="167" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.56862745098039214" green="0.20423768686611962" blue="0.49723483606987129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qk4-kI-6PU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Alphanumeric Cesar Cipher">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bY4-MD-c0D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U73-0S-OXn">
+                                <rect key="frame" x="212" y="167" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.36858974969521485" green="0.059682803013881826" blue="0.26284678173140008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bha-Zs-COg"/>
+                                </constraints>
+                                <state key="normal" title="Cesar Cipher">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOS-Wo-Pqe"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHJ-UK-fgb">
+                                <rect key="frame" x="20" y="270" width="374" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WnA-L6-qXo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0N-IK-gp2">
+                                <rect key="frame" x="212" y="215" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.56862745100000001" green="0.20423768689999999" blue="0.49723483610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zSn-bw-lDY"/>
+                                </constraints>
+                                <state key="normal" title="Rail-Fence Cipher">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryF-5a-reV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq1-Ko-TkT">
+                                <rect key="frame" x="20" y="382" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.24166251162206637" green="0.44705882352941173" blue="0.24151495574106852" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x2i-hf-rhw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="ENCODE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="encodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxW-wn-ML6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTL-mc-eNI">
+                                <rect key="frame" x="20" y="434" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.24166251159999999" green="0.44705882349999998" blue="0.24151495570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KAb-cU-RJx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="DECODE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="decodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbs-Vc-8MC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cipher Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wz0-Uh-lac">
+                                <rect key="frame" x="20.000000000000007" y="84" width="98.666666666666686" height="24"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-du-oIR">
+                                <rect key="frame" x="20" y="215" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.36858974970000002" green="0.05968280301" blue="0.26284678169999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="t1c-9S-i8Z"/>
+                                </constraints>
+                                <state key="normal" title="Emoji Cipher">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwZ-Rg-vPw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSk-Zs-rYA">
+                                <rect key="frame" x="20" y="125" width="99" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Cipher Key">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="20" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26070676813471505" green="0.036645357313634101" blue="0.053507667956954275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4B7-dH-Qje" firstAttribute="leading" secondItem="ZSk-Zs-rYA" secondAttribute="trailing" constant="10" id="2FX-f9-BsI"/>
+                            <constraint firstItem="e0N-IK-gp2" firstAttribute="top" secondItem="U73-0S-OXn" secondAttribute="bottom" constant="8" id="5sh-EP-ORW"/>
+                            <constraint firstItem="AZ5-du-oIR" firstAttribute="top" secondItem="U73-0S-OXn" secondAttribute="bottom" constant="8" id="7rR-Me-G0s"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="U73-0S-OXn" secondAttribute="trailing" constant="20" id="96e-sd-mNV"/>
+                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="CFn-aj-zao"/>
+                            <constraint firstItem="IU8-P1-mBo" firstAttribute="leading" secondItem="Wz0-Uh-lac" secondAttribute="trailing" constant="10" id="Ea9-8u-1kn"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="4B7-dH-Qje" secondAttribute="trailing" constant="20" id="JVR-0g-GlW"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="IU8-P1-mBo" secondAttribute="trailing" constant="20" id="Jyt-ah-XVF"/>
+                            <constraint firstItem="U73-0S-OXn" firstAttribute="top" secondItem="4B7-dH-Qje" secondAttribute="bottom" constant="15" id="LfQ-VX-WUR"/>
+                            <constraint firstItem="v1D-jN-O4R" firstAttribute="top" secondItem="4B7-dH-Qje" secondAttribute="bottom" constant="15" id="OIK-If-9Xl"/>
+                            <constraint firstItem="v1D-jN-O4R" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="OTC-04-Meq"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="kHJ-UK-fgb" secondAttribute="trailing" constant="20" id="OdB-hO-QHt"/>
+                            <constraint firstItem="ZSk-Zs-rYA" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="Qdt-Rw-ojB"/>
+                            <constraint firstItem="AZ5-du-oIR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" constant="-25" id="RZh-sN-Bjx"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="e0N-IK-gp2" secondAttribute="trailing" constant="20" id="Sox-P6-WNL"/>
+                            <constraint firstItem="4B7-dH-Qje" firstAttribute="centerY" secondItem="ZSk-Zs-rYA" secondAttribute="centerY" id="Sqg-ZJ-R5t"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="kq1-Ko-TkT" secondAttribute="trailing" constant="20" id="TaY-q4-QAk"/>
+                            <constraint firstItem="v1D-jN-O4R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" constant="-25" id="Uzy-2R-GDx"/>
+                            <constraint firstItem="U73-0S-OXn" firstAttribute="leading" secondItem="v1D-jN-O4R" secondAttribute="trailing" constant="10" id="V0u-Sa-Zae"/>
+                            <constraint firstItem="Wz0-Uh-lac" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="WgA-Rd-Osg"/>
+                            <constraint firstItem="kHJ-UK-fgb" firstAttribute="top" secondItem="e0N-IK-gp2" secondAttribute="bottom" constant="15" id="YF7-Tu-mUH"/>
+                            <constraint firstItem="AZ5-du-oIR" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="Z87-vR-P92"/>
+                            <constraint firstItem="rTL-mc-eNI" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="ddD-bX-Ulq"/>
+                            <constraint firstItem="e0N-IK-gp2" firstAttribute="leading" secondItem="AZ5-du-oIR" secondAttribute="trailing" constant="10" id="drv-Lg-9Hd"/>
+                            <constraint firstItem="kHJ-UK-fgb" firstAttribute="leading" secondItem="1tK-Jg-QVR" secondAttribute="leading" constant="20" id="fwU-Fn-h4n"/>
+                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="top" secondItem="kHJ-UK-fgb" secondAttribute="bottom" constant="12" id="lkR-1N-mTK"/>
+                            <constraint firstItem="Wz0-Uh-lac" firstAttribute="top" secondItem="1tK-Jg-QVR" secondAttribute="top" constant="20" id="sUj-gR-6Bp"/>
+                            <constraint firstItem="rTL-mc-eNI" firstAttribute="top" secondItem="kq1-Ko-TkT" secondAttribute="bottom" constant="12" id="sVY-CK-adg"/>
+                            <constraint firstItem="ZSk-Zs-rYA" firstAttribute="top" secondItem="IU8-P1-mBo" secondAttribute="bottom" constant="14" id="wfY-Gc-N5p"/>
+                            <constraint firstItem="1tK-Jg-QVR" firstAttribute="trailing" secondItem="rTL-mc-eNI" secondAttribute="trailing" constant="20" id="xRN-PL-hU4"/>
+                            <constraint firstItem="IU8-P1-mBo" firstAttribute="centerY" secondItem="Wz0-Uh-lac" secondAttribute="centerY" id="yGS-Kd-iR9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1tK-Jg-QVR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="🕵️‍♂️ Spy App" id="DAV-ZZ-g16"/>
+                    <connections>
+                        <outlet property="alphanumericCipherButton" destination="v1D-jN-O4R" id="lsV-oS-UCR"/>
+                        <outlet property="cesarCipherButton" destination="U73-0S-OXn" id="435-80-Eb8"/>
+                        <outlet property="decodeButton" destination="rTL-mc-eNI" id="lJ3-Er-L9B"/>
+                        <outlet property="emojiCipherButton" destination="AZ5-du-oIR" id="u5Y-8H-Vu8"/>
+                        <outlet property="encodeButton" destination="kq1-Ko-TkT" id="Dmz-15-LN1"/>
+                        <outlet property="inputTextView" destination="IU8-P1-mBo" id="ELe-hw-WKK"/>
+                        <outlet property="outputTextView" destination="kHJ-UK-fgb" id="ySu-Hg-sPd"/>
+                        <outlet property="railfenceCipherButton" destination="e0N-IK-gp2" id="7MI-5Q-yiN"/>
+                        <outlet property="secret" destination="4B7-dH-Qje" id="IhZ-kE-gVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-918.84057971014499" y="181.79347826086959"/>
+        </scene>
+    </scenes>
+</document>

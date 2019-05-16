@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3628D2262151A4A5005F34D1 /* AlphanumericCesarCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628D2252151A4A5005F34D1 /* AlphanumericCesarCipherTests.swift */; };
+		3628D2282151AD40005F34D1 /* EmojiCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628D2272151AD40005F34D1 /* EmojiCipherTests.swift */; };
+		3628D22A2151B8E2005F34D1 /* RailfenceCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628D2292151B8E2005F34D1 /* RailfenceCipherTests.swift */; };
+		362AB642213F63DB00FF67D7 /* AlphanumericCesarCipherAlgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AB641213F63DB00FF67D7 /* AlphanumericCesarCipherAlgo.swift */; };
+		36A11B5E214A43D900C0C954 /* RailfenceCipherAlgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A11B5D214A43D900C0C954 /* RailfenceCipherAlgo.swift */; };
+		36C79E5121408311002468EC /* EmojiCipherAlgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C79E5021408311002468EC /* EmojiCipherAlgo.swift */; };
+		36C9F4A42150E34700BC89DB /* CeasarCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C9F4A32150E34700BC89DB /* CeasarCipherTests.swift */; };
+		970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */; };
+		970E4DD72138EC8600BA3EE9 /* TextEncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD62138EC8600BA3EE9 /* TextEncryptionViewController.swift */; };
+		970E4DDA2138EC8600BA3EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DD82138EC8600BA3EE9 /* Main.storyboard */; };
+		970E4DDC2138EC8700BA3EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DDB2138EC8700BA3EE9 /* Assets.xcassets */; };
+		970E4DDF2138EC8700BA3EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DDD2138EC8700BA3EE9 /* LaunchScreen.storyboard */; };
+		970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */; };
+		970E4DF52138FC0B00BA3EE9 /* CeaserCipherAlgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DF42138FC0B00BA3EE9 /* CeaserCipherAlgo.swift */; };
+		970E4DF721392D4800BA3EE9 /* CipherFactoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DF621392D4800BA3EE9 /* CipherFactoryHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		970E4DE62138EC8700BA3EE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 970E4DC92138EC8600BA3EE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 970E4DD02138EC8600BA3EE9;
+			remoteInfo = SpyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3628D2252151A4A5005F34D1 /* AlphanumericCesarCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCesarCipherTests.swift; sourceTree = "<group>"; };
+		3628D2272151AD40005F34D1 /* EmojiCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCipherTests.swift; sourceTree = "<group>"; };
+		3628D2292151B8E2005F34D1 /* RailfenceCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailfenceCipherTests.swift; sourceTree = "<group>"; };
+		362AB641213F63DB00FF67D7 /* AlphanumericCesarCipherAlgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCesarCipherAlgo.swift; sourceTree = "<group>"; };
+		36A11B5D214A43D900C0C954 /* RailfenceCipherAlgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailfenceCipherAlgo.swift; sourceTree = "<group>"; };
+		36C79E5021408311002468EC /* EmojiCipherAlgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCipherAlgo.swift; sourceTree = "<group>"; };
+		36C9F4A32150E34700BC89DB /* CeasarCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeasarCipherTests.swift; sourceTree = "<group>"; };
+		970E4DD12138EC8600BA3EE9 /* TextEncryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEncryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		970E4DD62138EC8600BA3EE9 /* TextEncryptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEncryptionViewController.swift; sourceTree = "<group>"; };
+		970E4DD92138EC8600BA3EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		970E4DDB2138EC8700BA3EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		970E4DDE2138EC8700BA3EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		970E4DE02138EC8700BA3EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		970E4DE52138EC8700BA3EE9 /* TextEncryptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextEncryptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAppTests.swift; sourceTree = "<group>"; };
+		970E4DEB2138EC8700BA3EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		970E4DF42138FC0B00BA3EE9 /* CeaserCipherAlgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipherAlgo.swift; sourceTree = "<group>"; };
+		970E4DF621392D4800BA3EE9 /* CipherFactoryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherFactoryHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		970E4DCE2138EC8600BA3EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970E4DE22138EC8700BA3EE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		970E4DC82138EC8600BA3EE9 = {
+			isa = PBXGroup;
+			children = (
+				970E4DD32138EC8600BA3EE9 /* TextEncryption */,
+				970E4DE82138EC8700BA3EE9 /* TextEncryptionTests */,
+				970E4DD22138EC8600BA3EE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		970E4DD22138EC8600BA3EE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				970E4DD12138EC8600BA3EE9 /* TextEncryption.app */,
+				970E4DE52138EC8700BA3EE9 /* TextEncryptionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		970E4DD32138EC8600BA3EE9 /* TextEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */,
+				970E4DD62138EC8600BA3EE9 /* TextEncryptionViewController.swift */,
+				970E4DF42138FC0B00BA3EE9 /* CeaserCipherAlgo.swift */,
+				362AB641213F63DB00FF67D7 /* AlphanumericCesarCipherAlgo.swift */,
+				970E4DF621392D4800BA3EE9 /* CipherFactoryHelper.swift */,
+				970E4DD82138EC8600BA3EE9 /* Main.storyboard */,
+				970E4DDB2138EC8700BA3EE9 /* Assets.xcassets */,
+				970E4DDD2138EC8700BA3EE9 /* LaunchScreen.storyboard */,
+				970E4DE02138EC8700BA3EE9 /* Info.plist */,
+				36C79E5021408311002468EC /* EmojiCipherAlgo.swift */,
+				36A11B5D214A43D900C0C954 /* RailfenceCipherAlgo.swift */,
+			);
+			path = TextEncryption;
+			sourceTree = "<group>";
+		};
+		970E4DE82138EC8700BA3EE9 /* TextEncryptionTests */ = {
+			isa = PBXGroup;
+			children = (
+				970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */,
+				970E4DEB2138EC8700BA3EE9 /* Info.plist */,
+				36C9F4A32150E34700BC89DB /* CeasarCipherTests.swift */,
+				3628D2252151A4A5005F34D1 /* AlphanumericCesarCipherTests.swift */,
+				3628D2272151AD40005F34D1 /* EmojiCipherTests.swift */,
+				3628D2292151B8E2005F34D1 /* RailfenceCipherTests.swift */,
+			);
+			path = TextEncryptionTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		970E4DD02138EC8600BA3EE9 /* TextEncryption */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970E4DEE2138EC8700BA3EE9 /* Build configuration list for PBXNativeTarget "TextEncryption" */;
+			buildPhases = (
+				970E4DCD2138EC8600BA3EE9 /* Sources */,
+				970E4DCE2138EC8600BA3EE9 /* Frameworks */,
+				970E4DCF2138EC8600BA3EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextEncryption;
+			productName = SpyApp;
+			productReference = 970E4DD12138EC8600BA3EE9 /* TextEncryption.app */;
+			productType = "com.apple.product-type.application";
+		};
+		970E4DE42138EC8700BA3EE9 /* TextEncryptionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970E4DF12138EC8700BA3EE9 /* Build configuration list for PBXNativeTarget "TextEncryptionTests" */;
+			buildPhases = (
+				970E4DE12138EC8700BA3EE9 /* Sources */,
+				970E4DE22138EC8700BA3EE9 /* Frameworks */,
+				970E4DE32138EC8700BA3EE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				970E4DE72138EC8700BA3EE9 /* PBXTargetDependency */,
+			);
+			name = TextEncryptionTests;
+			productName = SpyAppTests;
+			productReference = 970E4DE52138EC8700BA3EE9 /* TextEncryptionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		970E4DC92138EC8600BA3EE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Axel Ancona Esselmann";
+				TargetAttributes = {
+					970E4DD02138EC8600BA3EE9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					970E4DE42138EC8700BA3EE9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						TestTargetID = 970E4DD02138EC8600BA3EE9;
+					};
+				};
+			};
+			buildConfigurationList = 970E4DCC2138EC8600BA3EE9 /* Build configuration list for PBXProject "TextEncryption" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 970E4DC82138EC8600BA3EE9;
+			productRefGroup = 970E4DD22138EC8600BA3EE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				970E4DD02138EC8600BA3EE9 /* TextEncryption */,
+				970E4DE42138EC8700BA3EE9 /* TextEncryptionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		970E4DCF2138EC8600BA3EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970E4DDF2138EC8700BA3EE9 /* LaunchScreen.storyboard in Resources */,
+				970E4DDC2138EC8700BA3EE9 /* Assets.xcassets in Resources */,
+				970E4DDA2138EC8600BA3EE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970E4DE32138EC8700BA3EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		970E4DCD2138EC8600BA3EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970E4DF52138FC0B00BA3EE9 /* CeaserCipherAlgo.swift in Sources */,
+				970E4DF721392D4800BA3EE9 /* CipherFactoryHelper.swift in Sources */,
+				970E4DD72138EC8600BA3EE9 /* TextEncryptionViewController.swift in Sources */,
+				36C79E5121408311002468EC /* EmojiCipherAlgo.swift in Sources */,
+				970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */,
+				362AB642213F63DB00FF67D7 /* AlphanumericCesarCipherAlgo.swift in Sources */,
+				36A11B5E214A43D900C0C954 /* RailfenceCipherAlgo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970E4DE12138EC8700BA3EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */,
+				36C9F4A42150E34700BC89DB /* CeasarCipherTests.swift in Sources */,
+				3628D2262151A4A5005F34D1 /* AlphanumericCesarCipherTests.swift in Sources */,
+				3628D22A2151B8E2005F34D1 /* RailfenceCipherTests.swift in Sources */,
+				3628D2282151AD40005F34D1 /* EmojiCipherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		970E4DE72138EC8700BA3EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 970E4DD02138EC8600BA3EE9 /* TextEncryption */;
+			targetProxy = 970E4DE62138EC8700BA3EE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		970E4DD82138EC8600BA3EE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				970E4DD92138EC8600BA3EE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		970E4DDD2138EC8700BA3EE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				970E4DDE2138EC8700BA3EE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		970E4DEC2138EC8700BA3EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		970E4DED2138EC8700BA3EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		970E4DEF2138EC8700BA3EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7MN23CD5F;
+				INFOPLIST_FILE = TextEncryption/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anconaesselmann.SpyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		970E4DF02138EC8700BA3EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7MN23CD5F;
+				INFOPLIST_FILE = TextEncryption/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anconaesselmann.SpyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		970E4DF22138EC8700BA3EE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7MN23CD5F;
+				INFOPLIST_FILE = SpyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anconaesselmann.SpyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextEncryption.app/TextEncryption";
+			};
+			name = Debug;
+		};
+		970E4DF32138EC8700BA3EE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D7MN23CD5F;
+				INFOPLIST_FILE = SpyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anconaesselmann.SpyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextEncryption.app/TextEncryption";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		970E4DCC2138EC8600BA3EE9 /* Build configuration list for PBXProject "TextEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970E4DEC2138EC8700BA3EE9 /* Debug */,
+				970E4DED2138EC8700BA3EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970E4DEE2138EC8700BA3EE9 /* Build configuration list for PBXNativeTarget "TextEncryption" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970E4DEF2138EC8700BA3EE9 /* Debug */,
+				970E4DF02138EC8700BA3EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970E4DF12138EC8700BA3EE9 /* Build configuration list for PBXNativeTarget "TextEncryptionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970E4DF22138EC8700BA3EE9 /* Debug */,
+				970E4DF32138EC8700BA3EE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 970E4DC92138EC8600BA3EE9 /* Project object */;
+}
