@@ -1,8 +1,7 @@
-# Csc690-Homework1
-Csc690 Homework1 Spy App
-
-## Spy App
- This app encrypt and decreapt user input by using Rail Fence Cipher, 
+# Csc690-Project1
+## Author: Ermias Haile
+## Spy IOS App
+ This app encrypt and decrypt user text input by using Rail Fence Cipher, 
  Alphanumeric Csesar Cipher, Emoji Cipher, and Cesar Cipher. 
 
 ## App UI
